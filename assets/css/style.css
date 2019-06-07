@@ -1,0 +1,13 @@
+#heading {
+    font-weight: bold;
+    text-align: left;
+    color: gold;
+    background-color: purple;
+}
+
+.jumbotron {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
