@@ -14,11 +14,23 @@
     padding: 0%;
 }
 
-.btn {
+.btn, input {
     margin: 5px;
     background-color: rgb(255,215,0,0.75);
     color: rgb(128,0,128);
     font-weight: bold;
+    font-size: 11px;
+}
+
+#playerInput{
+    width: 95%;
+    text-align: center;
+}
+
+#textOnly{
+    color: purple;
+    font-weight: bold;
+    opacity: 0.75;
 }
 
 .btn:hover {
@@ -27,10 +39,18 @@
     font-weight: bold;
 }
 
-#container {
+.container {
     display: block;
-    width: 90%;
+    width: 95%;
     margin-left: auto; 
+    margin-right: auto;
+    text-align: left;
+}
+
+.formContainer {
+    display: block;
+    width: 95%;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
@@ -42,4 +62,13 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#left {
+    width: 70%;
+}
+
+#right {
+    margin-left: 0%;
+    width: 20%;
 }

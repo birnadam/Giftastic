@@ -4,8 +4,8 @@ $(document).ready(function(){
     const apiKey = "2N7qe4KbTIcJ1nWq1LLxwCdGdRE9WwDt";
 
     //array of NBA players
-    const nbaPlayers = ["Lebron James", "Kobe Bryant", "Allen Iverson", "Kawhi Leonard", "Shaq", "Kyrie Irving", "Steph Curry", "Kyle Kuzma", "Brandon Ingram", "Lonzo Ball", "Jeremy Lin",
-    "Damian Lillard", "Blake Griffin", "Ben Simmons", "KAT", "Ricky Rubio", "Donovan Mitchell", "Anthony Davis", "Kemba Walker", "CJ McCollum" ];
+    const nbaPlayers = ["Lebron James", "Kobe Bryant", "Allen Iverson", "Kawhi Leonard", "Shaquille O'Neal", "Kyrie Irving", "Steph Curry", "Kyle Kuzma", "Brandon Ingram", "Lonzo Ball", "Jeremy Lin",
+    "Damian Lillard", "Blake Griffin", "Ben Simmons", "Karl Anthony Towns", "Ricky Rubio", "Donovan Mitchell", "Anthony Davis", "Kemba Walker", "CJ McCollum" ];
 
     //function to show buttons
     function renderButtons() {

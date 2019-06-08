@@ -18,16 +18,26 @@
 		  <h1>NBA Gifs Galore!!!</h1>
     </div>
 
-    <!-- rendered buttons here -->
-    <div id="container">
-      <div id="displayButtons"></div>
+    <div class="row">
+      <!-- rendered buttons here -->
+      <div class="container" id="left">
+        <div id="displayButtons"></div>
+      </div>
+
+      <!-- form to create new button -->
+      <div class="formContainer" id="right">
+        <!-- form here-->
+        <form id="playersForm"><br>
+          <label for="playerInput" id="textOnly">Add your favorite</label><br>
+          <input type="text" id="playerInput" placeholder="Add a player" autocomplete="off"><br>
+      
+          <!-- submit button here -->
+          <input id="addPlayer" type="submit" class="btn btn-info mb-2" data-toggle="buttons" value="Submit">
+        </form>>
+      </div>  
     </div>
-
-    <!-- gifs here -->
-
-    <!-- form to create new button -->
-      <!-- form here-->
-      <!-- submit button here -->
+    
+     <!-- gifs here -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
