@@ -1,4 +1,4 @@
-#heading {
+#heading, p, #textOnly {
     font-weight: bold;
     text-align: center;
     color: gold;
@@ -27,12 +27,6 @@
     text-align: center;
 }
 
-#textOnly{
-    color: purple;
-    font-weight: bold;
-    opacity: 0.75;
-}
-
 .btn:hover {
     background-color: rgb(128,0,128,0.5);
     color: rgb(255,215,0);
@@ -55,13 +49,22 @@
     text-align: center;
 }
 
+.gifContainer {
+    width: 95%;
+    align-content: left;
+}
+
+#playersGifs {
+   width: 40%;
+}
+
 #background {
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
     z-index: -1;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 0%;
+    top: -5%;
 }
 
 #left {
@@ -71,4 +74,16 @@
 #right {
     margin-left: 0%;
     width: 20%;
+}
+
+.nbaPlayers {
+    float: left;
+    margin: 5px;
+}
+
+#playersGifs{
+    display: block;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
 }

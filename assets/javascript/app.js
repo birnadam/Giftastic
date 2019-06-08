@@ -21,18 +21,45 @@ $(document).ready(function(){
     //run the function to display buttons
     renderButtons();
 
-    //click event
-    $(document).on('click', 'playerBtn', displayGifs);
-
     //function to display GIFs on click
     function displayGifs() {
+        let c = $(this).attr('data-name');
 
         //create a queryUrl variable to use API key
+        let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + c + "&api_key=" + apiKey + "&limit=6";
 
         //AJAX call for player being clicked
+        $.ajax({
+            url:queryURL, 
+            method: 'GET'
+        }).then(function(response) {
+            let results = response.data;
+            $('#playersGifs').empty();
 
-        //create a div for to hold the GIFs
-    }
+            for(var i=0; i < results.length; i++) {
+        //create a div for to hold the players from form
+            let playersDiv = $("<div class='nbaPlayers'>");
+            let rating = results[i].rating;
+            let p = $("<p>").text("Rating: " + rating);
+            let playerImage = $("<img>");
+
+                playerImage.attr("src", results[i].images.fixed_height_still.url);
+                playerImage.attr("data-still", results[i].images.fixed_height_still.url);
+                playerImage.attr("data-animate", results[i].images.fixed_height.url);
+                playerImage.attr("data-state", "still")
+                playerImage.attr("class", "pause")
+
+                playersDiv.prepend(p);
+                playersDiv.prepend(playerImage);
+
+                $('#playersGifs').prepend(playersDiv);
+            }
+        });
+
+    };
+
+    //click event (click on a player to dislay corresponding gifs)
+    $(document).on('click', '.playerBtn', displayGifs);
 
     //function to add new player to array
 
