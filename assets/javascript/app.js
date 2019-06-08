@@ -20,4 +20,27 @@ $(document).ready(function(){
     }
     //run the function to display buttons
     renderButtons();
+
+    //click event
+    $(document).on('click', 'playerBtn', displayGifs);
+
+    //function to display GIFs on click
+    function displayGifs() {
+
+        //create a queryUrl variable to use API key
+
+        //AJAX call for player being clicked
+
+        //create a div for to hold the GIFs
+    }
+
+    //function to add new player to array
+
+        //variable to hold user's input
+
+        //add that variable to our nbaPlayers array
+
+        //re-render buttons with the added array
+
+    //click event to change attribute on GIFs
 });
