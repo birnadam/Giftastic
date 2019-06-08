@@ -1,6 +1,6 @@
 #heading {
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     color: gold;
     background-color: purple;
 }
@@ -10,4 +10,25 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    padding: 1%;
+}
+
+.btn {
+    margin: 5px;
+    background-color: gold;
+    color: purple;
+}
+
+.btn:hover {
+    background-color: purple;
+    color: gold;
+    font-weight: bold;
+}
+
+#container {
+    display: block;
+    width: 90%;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
 }
