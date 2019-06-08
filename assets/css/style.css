@@ -2,7 +2,8 @@
     font-weight: bold;
     text-align: center;
     color: gold;
-    background-color: purple;
+    background: url("../images/headerBG.jpg");
+    opacity: 0.8;
 }
 
 .jumbotron {
@@ -10,18 +11,19 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
+    padding: 0%;
 }
 
 .btn {
     margin: 5px;
-    background-color: gold;
-    color: purple;
+    background-color: rgb(255,215,0,0.75);
+    color: rgb(128,0,128);
+    font-weight: bold;
 }
 
 .btn:hover {
-    background-color: purple;
-    color: gold;
+    background-color: rgb(128,0,128,0.5);
+    color: rgb(255,215,0);
     font-weight: bold;
 }
 
@@ -31,4 +33,13 @@
     margin-left: auto; 
     margin-right: auto;
     text-align: center;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
