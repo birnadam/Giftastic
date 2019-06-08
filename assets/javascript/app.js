@@ -73,6 +73,17 @@ $(document).ready(function(){
 
         //re-render buttons with the added array
         renderButtons();
+    });
 
     //click event to change attribute on GIFs
+    $('#playersGifs').on('click', '.pause', function() {
+        let state = $(this).attr("data-state");
+        if (state === "still") {
+            $(this).attr("src", $(this).attr("data-animate"));
+            $(this).attr("data-state", "animate");
+        } else {
+            $(this).attr("src", $(this).attr("data-still"));
+            $(this).attr("data-state", "still");
+        }
+    });
 });
