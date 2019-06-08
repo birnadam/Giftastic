@@ -62,12 +62,17 @@ $(document).ready(function(){
     $(document).on('click', '.playerBtn', displayGifs);
 
     //function to add new player to array
+    $('#addPlayer').on('click', function(event) {
+        event.preventDefault();
 
         //variable to hold user's input
+        let player = $("#playerInput").val().trim();
 
         //add that variable to our nbaPlayers array
+        nbaPlayers.push(player);
 
         //re-render buttons with the added array
+        renderButtons();
 
     //click event to change attribute on GIFs
 });
